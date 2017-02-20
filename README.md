@@ -7,7 +7,7 @@
 	<img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000" alt="license">
         
 </p>
-# Dragonball
+# MaxDB
 A repository dedicated to issue tracking for [MaxDB](https://maxdb.net "Dragonball")
 
 #FAQ:
