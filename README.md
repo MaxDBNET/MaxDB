@@ -9,6 +9,7 @@ A repository dedicated to issue tracking for [MaxDB](https://maxdb.net "Dragonba
 - ## [Intensify Speed Boost](https://github.com/RumbleFrog/Exciting-Speed-Boost) [![Build Status](https://travis-ci.org/RumbleFrog/Exciting-Speed-Boost.svg?branch=master)](https://travis-ci.org/RumbleFrog/Exciting-Speed-Boost)
 - ## [Steam Group Invite](https://github.com/RumbleFrog/Steam-Group-Invite) [![Build Status](https://travis-ci.org/RumbleFrog/Steam-Group-Invite.svg?branch=master)](https://travis-ci.org/RumbleFrog/Steam-Group-Invite)
 - ## [EventLogs](https://github.com/RumbleFrog/EventLogs) [![Build Status](https://travis-ci.org/RumbleFrog/EventLogs.svg?branch=master)](https://travis-ci.org/RumbleFrog/EventLogs)
+- ## [Player Air Blast](https://github.com/RumbleFrog/Player-Air-Blast) [![Build Status](https://travis-ci.org/RumbleFrog/Player-Air-Blast.svg?branch=master)](https://travis-ci.org/RumbleFrog/Player-Air-Blast)
 
 # FAQ:
   If you have any question/concern, please contact me at fishy@maxdb.net
