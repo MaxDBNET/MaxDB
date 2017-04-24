@@ -11,7 +11,7 @@ A repository dedicated to issue tracking for [MaxDB](https://maxdb.net "Dragonba
 - ## [EventLogs](https://github.com/RumbleFrog/EventLogs) [![Build Status](https://travis-ci.org/RumbleFrog/EventLogs.svg?branch=master)](https://travis-ci.org/RumbleFrog/EventLogs)
 - ## [Player Air Blast](https://github.com/RumbleFrog/Player-Air-Blast) [![Build Status](https://travis-ci.org/RumbleFrog/Player-Air-Blast.svg?branch=master)](https://travis-ci.org/RumbleFrog/Player-Air-Blast)
 - ## [Golden Annihilation](https://github.com/RumbleFrog/Player-Air-Blast) [![Build Status](https://travis-ci.org/RumbleFrog/Golden-Annihilation.svg?branch=master)](https://travis-ci.org/RumbleFrog/Golden-Annihilation)
-- ## [Ticketron](https://github.com/RumbleFrog/Ticketron) [![Build Status](https://travis-ci.org/RumbleFrog/Ticketron.svg?branch=master)](https://travis-ci.org/RumbleFrog/Ticketron)
+- ## Ticketron [![Build Status](https://travis-ci.com/RumbleFrog/Ticketron.svg?token=fzDwLamkGxdhu8zz3Bvs&branch=master)](https://travis-ci.com/RumbleFrog/Ticketron)
 
 # FAQ:
   If you have any question/concern, please contact me at fishy@maxdb.net
