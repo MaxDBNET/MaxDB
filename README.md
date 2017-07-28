@@ -13,7 +13,7 @@ A repository dedicated to issue tracking for [MaxDB](https://maxdb.net "Dragonba
 - [Golden Annihilation](https://github.com/RumbleFrog/Player-Air-Blast) [![Build Status](https://travis-ci.org/RumbleFrog/Golden-Annihilation.svg?branch=master)](https://travis-ci.org/RumbleFrog/Golden-Annihilation)
 - Ticketron [![Build Status](https://travis-ci.com/RumbleFrog/Ticketron.svg?token=fzDwLamkGxdhu8zz3Bvs&branch=master)](https://travis-ci.com/RumbleFrog/Ticketron)
 - [Transparent Broadcast](https://github.com/RumbleFrog/Transparent-Broadcast) [![Build Status](https://travis-ci.org/RumbleFrog/Transparent-Broadcast.svg?branch=master)](https://travis-ci.org/RumbleFrog/Transparent-Broadcast)
-- [Modular LS](https://github.com/RumbleFrog/Modular_LS) [![Build Status](https://travis-ci.com/RumbleFrog/Modular_LS.svg?token=fzDwLamkGxdhu8zz3Bvs&branch=master)](https://travis-ci.com/RumbleFrog/Modular_LS)
+- Modular LS [![Build Status](https://travis-ci.com/RumbleFrog/Modular_LS.svg?token=fzDwLamkGxdhu8zz3Bvs&branch=master)](https://travis-ci.com/RumbleFrog/Modular_LS)
 
 # FAQ:
   If you have any question/concern, please contact me at fishy@maxdb.net
