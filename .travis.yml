@@ -21,6 +21,4 @@ deploy:
   fqdn: maxdb.net
   target-branch: master
   on:
-    branches:
-      only:
-        - src
+    branch: src
