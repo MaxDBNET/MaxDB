@@ -1,26 +1,51 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+      <section id="app" class="hero is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar" role="navigation" aria-label="Navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <router-link to="/" class="navbar-item">
+                            <img src="/static/favicon/favicon.png">
+                        </router-link>
+                        <button class="button is-dark navbar-burger"
+                            @click="navMenuActive = !navMenuActive">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="navbar-menu" :class="{'is-active': navMenuActive}">
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container">
+                <keep-alive><router-view></router-view></keep-alive>
+            </div>
+        </div>
+        <div class="hero-footer">
+            <div class="container">
+                <footer class="footer">
+                    <div class="content has-text-centered">
+                        Constructed and curated by <a href="https://keybase.io/rumblefrog" target="_blank">Fishy!#6593</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
 export default {
-    name: 'App',
+    name: 'MaxDB',
+    data() {
+        return {
+            navMenuActive: false,
+        };
+    },
 };
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
 
 <style lang="scss">
 @import "~bulma/sass/utilities/_all";
