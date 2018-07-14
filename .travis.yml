@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10"
+  - "8"
 
 cache:
   directories:
@@ -20,3 +20,7 @@ deploy:
   local-dir: dist
   fqdn: maxdb.net
   target-branch: master
+  on:
+    branches:
+      only:
+        - src

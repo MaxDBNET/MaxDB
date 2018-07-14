@@ -6,11 +6,11 @@ import Home from '@/components/Home';
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home,
-    },
-  ],
+    routes: [
+        {
+            path: '/',
+            name: 'Home',
+            component: Home,
+        },
+    ],
 });
