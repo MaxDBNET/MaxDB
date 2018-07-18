@@ -22,36 +22,38 @@
                     </div>
                 </article>
             </figure>
-            <div class="media-content box">
-                <b-table
-                    :data="dummy"
-                    hoverable
-                    mobile-cards>
+            <div class="media-content">
+                <div class="box">
+                    <b-table
+                        :data="dummy"
+                        hoverable
+                        mobile-cards>
 
-                    <template slot-scope="props">
-                        <b-table-column field="name" label="Name">
-                            {{ props.row.name }}
-                        </b-table-column>
+                        <template slot-scope="props">
+                            <b-table-column field="name" label="Name">
+                                {{ props.row.name }}
+                            </b-table-column>
 
-                        <b-table-column field="score" label="Score">
-                            {{ props.row.score }}
-                        </b-table-column>
-                    </template>
+                            <b-table-column field="score" label="Score">
+                                {{ props.row.score }}
+                            </b-table-column>
+                        </template>
 
-                    <template slot="empty">
-                        <section class="section">
-                            <div class="content has-text-grey has-text-centered">
-                                <p>
-                                    <b-icon
-                                        icon="emoticon-sad"
-                                        size="is-large">
-                                    </b-icon>
-                                </p>
-                                <p>Go spam Dragon.</p>
-                            </div>
-                        </section>
-                    </template>
-                </b-table>
+                        <template slot="empty">
+                            <section class="section">
+                                <div class="content has-text-grey has-text-centered">
+                                    <p>
+                                        <b-icon
+                                            icon="emoticon-sad"
+                                            size="is-large">
+                                        </b-icon>
+                                    </p>
+                                    <p>Go spam Dragon.</p>
+                                </div>
+                            </section>
+                        </template>
+                    </b-table>
+                </div>
             </div>
         </article>
     </div>

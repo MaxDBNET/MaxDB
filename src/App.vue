@@ -1,5 +1,5 @@
 <template>
-      <section id="app" class="hero is-maxdb is-fullheight">
+      <section id="app" class="hero is-dark is-fullheight">
         <div class="hero-head">
             <nav class="navbar" role="navigation" aria-label="Navigation">
                 <div class="container">
@@ -48,29 +48,17 @@ export default {
 
 <style lang="scss">
 @import "~bulma/sass/utilities/_all";
+@import "~bulmaswatch/cyborg/_variables";
 
-$maxdb: #070C16;
-$maxdb-invert: findColorInvert($maxdb);
-
-$colors: (
-  "white": ($white, $black),
-  "black": ($black, $white),
-  "light": ($light, $light-invert),
-  "dark": ($dark, $dark-invert),
-  "primary": ($primary, $primary-invert),
-  "info": ($info, $info-invert),
-  "success": ($success, $success-invert),
-  "warning": ($warning, $warning-invert),
-  "danger": ($danger, $danger-invert),
-  "maxdb": ($maxdb, $maxdb-invert)
-);
+$table-background-color: $black-ter;
 
 @import "~bulma";
+@import "~bulmaswatch/cyborg/_overrides";
 @import "~buefy/src/scss/buefy";
 </style>
 
 <style>
-.hero.is-maxdb {
+.hero.is-dark {
     background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)

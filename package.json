@@ -23,6 +23,7 @@
     "axios": "^0.18.0",
     "buefy": "^0.6.6",
     "bufferpack": "^0.0.6",
+    "bulmaswatch": "^0.7.0",
     "dgram-browserify": "^0.0.13",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
