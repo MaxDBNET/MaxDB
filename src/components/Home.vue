@@ -17,6 +17,9 @@
                     <div class="media-content">
                         <span class="status">Online</span>
                     </div>
+                    <div class="media-right">
+                        <a href="#" class="button is-info is-rounded join-button">Join Server</a>
+                    </div>
                 </article>
             </figure>
             <div class="media-content box">
@@ -65,6 +68,17 @@ export default {
                 { name: 'Fishy!', score: 50 },
                 { name: 'Dragon', score: 20 },
                 { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
+                { name: 'Blank', score: 10 },
             ],
         };
     },
@@ -77,5 +91,8 @@ export default {
 }
 .status {
     line-height: 3em;
+}
+.join-button {
+    margin-top: 7px;
 }
 </style>
