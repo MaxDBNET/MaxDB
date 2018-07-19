@@ -135,13 +135,9 @@ export default {
             this.status = true;
             this.data = result.data;
 
-            for (const team in this.data.teams) {
-                if (!['blue', 'red'].includes(team))
-                    continue;
-
+            for (const team in this.data.teams)
                 for (const player in this.data.teams[team])
                     this.umap.push(Object.assign(this.data.teams[team][player], { id: player, team: team }));
-            }
 
             this.tlist = this.findMapThumbnail(this.data.info.map);
             this.map = this.tlist[0];
