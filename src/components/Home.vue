@@ -102,14 +102,18 @@ export default {
     },
     methods: {
         findMapThumbnail(needle) {
+            let r = [];
             for (const Render of Renders.children) {
                 if (leven(needle, Render.name) < 10) {
-                    return Render.children.map(c => {
-                        return `/static/map_renders/${Render.name}/${c.name}`
-                    });
+                    for (const c of Render.children) {
+                        if (c.name.indexOf('overview') !== -1) continue;
+
+                        r.push(`/static/map_renders/${Render.name}/${c.name}`);
+                    }
+                    return r;
                 }
             }
-            return ['/static/img/unknown.jpg'];
+            return ['/static/img/unknown.png'];
         },
         rotate() {
             if (this.tindex + 1 >= this.tlist.length) {
@@ -124,7 +128,7 @@ export default {
         let err, result;
 
         [ err, result ] = await to(
-            Axios.get('http://74.91.112.77:27015/FetchGData/extensive')
+            Axios.get('https://unruly-pepper.glitch.me/')
         );
 
         if (!err) {
