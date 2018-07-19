@@ -121,8 +121,6 @@ export default {
         },
     },
     async mounted() {
-        console.log(leven('ping_pong', 'bitch_ass_ezzie'));
-
         let err, result;
 
         [ err, result ] = await to(
@@ -144,7 +142,7 @@ export default {
             this.tlist = this.findMapThumbnail(this.data.info.map);
             this.map = this.tlist[0];
 
-            setInterval(this.rotate, 5000);
+            setInterval(this.rotate, 1000 * 10);
         }
 
         this.loading = false;
