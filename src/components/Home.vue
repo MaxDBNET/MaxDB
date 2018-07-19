@@ -1,9 +1,9 @@
 <template>
     <div class="box has-text-centered">
-        <article class="media is-centered is-vcentered">
+        <article class="media">
             <figure class="media-left">
                 <div class="map" :style="`background-image:url(${map})`" />
-                <article class="media is-centered is-vcentered">
+                <article class="media" id="info">
                     <figure class="media-left">
                         <img :src="`/static/img/${status ? 'online' : 'dnd'}.png`"
                                 height="48"
@@ -174,5 +174,8 @@ export default {
 }
 .padvalue {
     margin-left: 30px;
+}
+#info {
+    border-top: none;
 }
 </style>
