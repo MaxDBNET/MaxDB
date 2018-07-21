@@ -104,7 +104,7 @@ export default {
         findMapThumbnail(needle) {
             let r = [];
             for (const Render of Renders.children) {
-                if (leven(needle, Render.name) < 10) {
+                if (leven(needle, Render.name) < 5) {
                     for (const c of Render.children) {
                         if (c.name.indexOf('overview') !== -1) continue;
 
