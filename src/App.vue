@@ -16,7 +16,7 @@
                     </div>
                     <div class="navbar-menu" :class="{'is-active': navMenuActive}">
                         <div class="navbar-end">
-                            <a href="https://discord.gg/TZ4BsrQ" class="navbar-item" target="_blank">
+                            <a href="https://discord.gg/43ks88x" class="navbar-item" target="_blank">
                                 <div class="button is-white is-outlined">
                                     <b-icon icon="discord" pack="fab"></b-icon>&nbsp;
                                     <span>Discord Server</span>
