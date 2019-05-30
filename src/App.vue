@@ -15,6 +15,12 @@
                         </button>
                     </div>
                     <div class="navbar-menu" :class="{'is-active': navMenuActive}">
+                        <div class="navbar-start">
+                            <router-link to="Leaderboard" class="navbar-item">
+                                <span>Leaderboard</span>
+                            </router-link>
+                            <a class="navbar-item" href="https://bans.maxdb.net" target="_blank">Bans</a>
+                        </div>
                         <div class="navbar-end">
                             <a href="https://discord.gg/43ks88x" class="navbar-item" target="_blank">
                                 <div class="button is-white is-outlined">

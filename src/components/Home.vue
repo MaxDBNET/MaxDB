@@ -13,7 +13,7 @@
                         <span class="status">{{ status ? 'Online' : 'Offline' }}</span>
                     </div>
                     <div class="media-right">
-                        <a href="steam://connect/74.91.112.77:27015" class="button is-info is-rounded join-button">Join Server</a>
+                        <a href="steam://connect/play.maxdb.net:27015" class="button is-info is-rounded join-button">Join Server</a>
                     </div>
                 </article>
                 <div class="extensive" v-if="status">
