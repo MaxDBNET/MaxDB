@@ -66,7 +66,7 @@
                                         </b-icon>
                                     </p>
                                     <p>OwO, no one is on. Go spam Dragon.</p>
-                                    <a href="steam://connect/74.91.112.77:27015" class="button is-info">Be the first one to join</a>
+                                    <a href="steam://connect/play.maxdb.net:27015" class="button is-info">Be the first one to join</a>
                                 </div>
                             </section>
                         </template>
