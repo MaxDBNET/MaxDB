@@ -4,8 +4,9 @@ import Vue from 'vue';
 
 import Buefy from 'buefy';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faMap, faUsers }from '@fortawesome/free-solid-svg-icons';
+import { faFrown } from '@fortawesome/free-regular-svg-icons';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 import 'animate.css/animate.min.css';
@@ -22,6 +23,9 @@ Vue.use(Buefy, {
 library.add(faDiscord);
 library.add(faMap);
 library.add(faUsers);
+library.add(faFrown);
+
+dom.watch();
 
 /* eslint-disable no-new */
 new Vue({
