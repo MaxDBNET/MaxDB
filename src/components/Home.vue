@@ -108,7 +108,7 @@ export default {
                     for (const c of Render.children) {
                         if (c.name.indexOf('overview') !== -1) continue;
 
-                        r.push(`/static/map_renders/${Render.name}/${c.name}`);
+                        r.push(`https://dl.maxdb.net/thumbnails/${Render.name}/${c.name}`);
                     }
                     return r;
                 }
