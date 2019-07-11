@@ -27,7 +27,7 @@
     "dgram-browserify": "^0.0.13",
     "directory-tree": "^2.1.0",
     "leven": "^2.1.0",
-    "vue": "^2.5.2",
+    "vue": "^2.5.13",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
