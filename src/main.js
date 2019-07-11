@@ -4,10 +4,10 @@ import Vue from 'vue';
 
 import Buefy from 'buefy';
 
-import fontAwesome from '@fortawesome/fontawesome';
-import faSolid from '@fortawesome/fontawesome-free-solid';
-import faRegular from '@fortawesome/fontawesome-free-regular';
-import faBrands from '@fortawesome/fontawesome-free-brands';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import faSolid from '@fortawesome/free-solid-svg-icons';
+import faRegular from '@fortawesome/free-regular-svg-icons';
+import faBrands from '@fortawesome/free-brands-svg-icons';
 
 import 'animate.css/animate.min.css';
 
@@ -20,9 +20,11 @@ Vue.use(Buefy, {
     defaultIconPack: 'fas',
 });
 
-fontAwesome.library.add(faSolid);
-fontAwesome.library.add(faRegular);
-fontAwesome.library.add(faBrands);
+library.add(faSolid);
+library.add(faRegular);
+library.add(faBrands);
+
+dom.watch();
 
 /* eslint-disable no-new */
 new Vue({
