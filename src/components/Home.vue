@@ -1,5 +1,5 @@
 <template>
-    <div class="box has-text-centered server-container" :style="`background-image:url(${map})`">
+    <div class="box has-text-centered server-container" :style="serverStyle">
         <article class="media">
             <figure class="media-left server-box server-info-box">
                 <article class="media" id="info">
@@ -93,9 +93,23 @@ export default {
             tindex: 0,
             tlist: [],
             map: "",
+            transition: false,
             Prefixes,
             Renders,
         };
+    },
+    computed: {
+        serverStyle() {
+            let a = {
+                "background-image": `url(${this.map})`,
+            };
+
+            if (this.transition) {
+                a.transition = "3s"
+            }
+
+            return a;
+        }
     },
     methods: {
         findMapThumbnail(needle) {
@@ -138,6 +152,8 @@ export default {
 
             this.tlist = this.findMapThumbnail(this.data.info.map);
             this.map = this.tlist[0];
+
+            this.$nextTick(() => this.transition = true);
 
             setInterval(this.rotate, 1000 * 10);
         }
