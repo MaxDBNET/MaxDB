@@ -71,4 +71,7 @@ $table-background-color: $black-ter;
     ), url('/static/img/sandstormed_2-1080p-compressed.jpg')
     no-repeat center center fixed !important;
 }
+html {
+    overflow-y: hidden;
+}
 </style>
