@@ -1,10 +1,9 @@
 <template>
-    <div class="box has-text-centered">
+    <div class="box has-text-centered server-container" :style="`background-image:url(${map})`">
         <article class="media">
-            <figure class="media-left">
-                <div class="map" :style="`background-image:url(${map})`" />
+            <figure class="media-left server-box server-info-box">
                 <article class="media" id="info">
-                    <figure class="media-left">
+                    <figure class="media-left ">
                         <img :src="`/static/img/${status ? 'online' : 'dnd'}.png`"
                                 height="48"
                                 width="48">
@@ -27,51 +26,49 @@
                     </b-field>
                 </div>
             </figure>
-            <div class="media-content">
-                <div class="box">
-                    <b-table
-                        :data="umap"
-                        hoverable
-                        mobile-cards
-                        focusable
-                        :row-class="(row) => (row.team === 'red') ? 'is-danger' : 'is-info'">
+            <div class="media-content server-box">
+                <b-table
+                    :data="umap"
+                    hoverable
+                    mobile-cards
+                    focusable
+                    :row-class="(row) => (row.team === 'red') ? 'is-danger' : 'is-info'">
 
-                        <template slot-scope="props">
-                            <b-table-column field="name" label="Name">
-                                <a :href="'https://steamcommunity.com/profiles/' + props.row.id" target="_blank">{{ props.row.name }}</a>
-                                <b-tag type="is-primary" v-if="hasOwnProperty.call(Prefixes, props.row.id)">{{ Prefixes[props.row.id] }}</b-tag>
-                            </b-table-column>
+                    <template slot-scope="props">
+                        <b-table-column field="name" label="Name">
+                            <a :href="'https://steamcommunity.com/profiles/' + props.row.id" target="_blank">{{ props.row.name }}</a>
+                            <b-tag type="is-primary" v-if="hasOwnProperty.call(Prefixes, props.row.id)">{{ Prefixes[props.row.id] }}</b-tag>
+                        </b-table-column>
 
-                            <b-table-column field="frags" label="Frags">
-                                {{ props.row.frags }}
-                            </b-table-column>
+                        <b-table-column field="frags" label="Frags">
+                            {{ props.row.frags }}
+                        </b-table-column>
 
-                            <b-table-column field="deaths" label="Deaths">
-                                {{ props.row.deaths }}
-                            </b-table-column>
+                        <b-table-column field="deaths" label="Deaths">
+                            {{ props.row.deaths }}
+                        </b-table-column>
 
-                            <b-table-column field="latency" label="Latency">
-                                {{ Math.round(props.row.latency * 1000) }} ms
-                            </b-table-column>
-                        </template>
+                        <b-table-column field="latency" label="Latency">
+                            {{ Math.round(props.row.latency * 1000) }} ms
+                        </b-table-column>
+                    </template>
 
-                        <template slot="empty">
-                            <section class="section">
-                                <div class="content has-text-grey has-text-centered">
-                                    <p>
-                                        <b-icon
-                                            icon="frown"
-                                            pack="far"
-                                            size="is-large">
-                                        </b-icon>
-                                    </p>
-                                    <p>OwO, no one is on. Go spam Dragon.</p>
-                                    <a href="steam://connect/play.maxdb.net:27015" class="button is-info">Be the first one to join</a>
-                                </div>
-                            </section>
-                        </template>
-                    </b-table>
-                </div>
+                    <template slot="empty">
+                        <section class="section">
+                            <div class="content has-text-grey has-text-centered">
+                                <p>
+                                    <b-icon
+                                        icon="frown"
+                                        pack="far"
+                                        size="is-large">
+                                    </b-icon>
+                                </p>
+                                <p>OwO, no one is on. Go spam Dragon.</p>
+                                <a href="steam://connect/play.maxdb.net:27015" class="button is-info">Be the first one to join</a>
+                            </div>
+                        </section>
+                    </template>
+                </b-table>
             </div>
         </article>
         <b-loading :is-full-page=false :active.sync="loading"></b-loading>
@@ -106,9 +103,9 @@ export default {
             for (const Render of Renders.children) {
                 if (leven(needle, Render.name) < 5) {
                     for (const c of Render.children) {
-                        if (c.name.indexOf('overview') !== -1) continue;
+                        let baseName = c.name.replace(/\.[^/.]+$/, "");
 
-                        r.push(`https://dl.maxdb.net/thumbnails/${Render.name}/${c.name}`);
+                        r.push(`https://dl.maxdb.net/thumbnails/${Render.name}/${baseName}_blurred${c.extension}`);
                     }
                     return r;
                 }
@@ -150,15 +147,16 @@ export default {
 };
 </script>
 
-<style scoped>
-.map {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    border-radius: 50%;
-    width: 100%;
-    padding-top: 100%;
+<style lang="css">
+.table {
+    background-color: rgba(0, 0, 0, 0);
 }
+.table.is-hoverable tbody tr:not(.is-selected):hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+</style>
+
+<style scoped>
 .status {
     line-height: 3em;
 }
@@ -173,5 +171,19 @@ export default {
 }
 #info {
     border-top: none;
+}
+.server-container {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+.server-box {
+    display: block;
+    padding: 1.25rem;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.server-info-box {
+    padding-top: 0.5rem;
 }
 </style>
