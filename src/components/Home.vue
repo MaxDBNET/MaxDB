@@ -151,6 +151,12 @@ export default {
                     this.umap.push(Object.assign(this.data.teams[team][player], { id: player, team: team }));
 
             this.tlist = this.findMapThumbnail(this.data.info.map);
+
+            // Precache images to prevent flashes
+            this.tlist.forEach(i => {
+                new Image().src = i;
+            });
+
             this.map = this.tlist[0];
 
             this.$nextTick(() => this.transition = true);
