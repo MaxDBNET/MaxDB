@@ -199,7 +199,7 @@ export default {
     border-top: none;
 }
 .server-container {
-    margin-top: 10vh;
+    margin-top: 12vh;
     margin-bottom: 10vh;
     height: 60vh;
     background-size: cover;
