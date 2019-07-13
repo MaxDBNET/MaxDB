@@ -5,7 +5,7 @@ import Vue from 'vue';
 import Buefy from 'buefy';
 
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import { faMap, faUsers }from '@fortawesome/free-solid-svg-icons';
+import { faMap, faUsers, faTag }from '@fortawesome/free-solid-svg-icons';
 import { faFrown } from '@fortawesome/free-regular-svg-icons';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
@@ -20,6 +20,7 @@ Vue.use(Buefy, {
     defaultIconPack: 'fas',
 });
 
+library.add(faTag);
 library.add(faDiscord);
 library.add(faMap);
 library.add(faUsers);
