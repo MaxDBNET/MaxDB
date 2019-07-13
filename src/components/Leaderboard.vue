@@ -41,7 +41,7 @@ export default {
         let err, result;
 
         [ err, result ] = await to(
-            Axios.get('https://api.maxdb.net/leaderboard.php')
+            Axios.get('https://api.maxdb.net/leaderboard')
         );
 
         if (!err) {
