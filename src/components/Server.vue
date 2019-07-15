@@ -201,7 +201,7 @@ export default {
 .server-container {
     margin-top: 12vh;
     margin-bottom: 10vh;
-    height: 60vh;
+    min-height: 60vh;
     background-size: cover;
     background-position: center;
 }
