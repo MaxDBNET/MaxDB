@@ -5,9 +5,10 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <router-link to="/" class="navbar-item">
-                            <img src="/static/img/logo_white.png" style="color:#fff;">
+                            <img src="/static/img/logo_white.png" style="color:#fff;" alt="Logo">
                         </router-link>
                         <button class="button is-dark navbar-burger"
+                            aria-label="Navigation"
                             @click="navMenuActive = !navMenuActive">
                             <span></span>
                             <span></span>

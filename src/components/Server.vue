@@ -2,7 +2,7 @@
     <div class="box has-text-centered server-container" :style="serverStyle">
         <article class="media">
             <figure class="media-left server-box server-info-box">
-                <article class="media" id="info">
+                <article class="media media-info">
                     <figure class="media-left ">
                         <img :src="`/static/img/${status ? 'online' : 'dnd'}.png`"
                                 height="48"
@@ -195,7 +195,7 @@ export default {
 .padvalue {
     margin-left: 30px;
 }
-#info {
+.media-info {
     border-top: none;
 }
 .server-container {
