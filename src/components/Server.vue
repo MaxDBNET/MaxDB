@@ -204,6 +204,7 @@ export default {
     min-height: 60vh;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 .server-box {
     display: block;
