@@ -2,7 +2,7 @@ const dirTree = require('directory-tree')
     , sharp = require('sharp')
     , fs = require('fs');
 
-const sSource = 'F:\\Github\\Source-Map-Thumbnails\\screenshots_blurred\\';
+const sSource = 'F:\\smt-2.0.0-windows\\screenshots_blurred\\';
 
 const treeItems = dirTree(sSource, { extensions: /^(?=.*(?:\.jpg))(?!.*(?:blurred\.jpg)).*$/});
 
