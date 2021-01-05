@@ -20,7 +20,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "animate.css": "^3.6.1",
     "await-to-js": "^2.0.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "buefy": "^0.7.10",
     "bufferpack": "^0.0.6",
     "bulmaswatch": "^0.7.0",
